@@ -1,0 +1,93 @@
+/* styles.css */
+/* Basic styles for the entire page */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Navbar styles */
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Hero section styles with animation */
+#hero {
+  background-image: url('profile.webp'); /* Replace with the actual S3 URL */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Add a color to the hero content */
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+}
+
+/* Keyframe animation for fadeIn */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Add a hover effect for project images */
+.project img {
+  transition: transform 0.3s ease;
+}
+
+.project img:hover {
+  transform: scale(1.1);
+}
+
+/* Add a background color and animation to the footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Keyframe animation for fadeInUp */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
